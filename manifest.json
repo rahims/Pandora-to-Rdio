@@ -1,0 +1,29 @@
+{
+  "name": "Pandora to Rdio",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Send tracks you thumbs up in Pandora to an Rdio playlist.",
+  "icons": {
+	  "128": "icon.png"
+  },
+  "content_scripts": [
+	  {
+		  "matches": ["http://www.pandora.com/*"],
+		  "js": ["jquery.min.js", "content_script.js"]
+	  }
+  ],
+	"background": {
+	   "scripts": [
+		   "chrome_ex_oauthsimple.js",
+		   "chrome_ex_oauth.js",
+		   "background.js"
+		]
+   },
+  "permissions": [
+		"tabs",
+		"http://api.rdio.com/oauth/request_token",
+		"https://www.rdio.com/oauth/authorize",
+		"http://api.rdio.com/oauth/access_token",
+		"http://api.rdio.com/1/"
+  ]
+}
