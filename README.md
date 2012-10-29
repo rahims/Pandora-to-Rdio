@@ -3,6 +3,8 @@ Pandora to Rdio is a quick Chrome extension I created at the [Austin Music Hacka
 
 Use it to take the pain out of creating playlists by letting Pandora do the hard work of finding music you like. The code also serves as a good base for building out more elaborate Pandora integrations, such as a Last.fm scrobbler. If you build something cool, I'd love to hear about it, [rsonawalla@gmail.com](mailto:rsonawalla@gmail.com) / [@rahims](https://twitter.com/rahims).
 
+For more background on this project, please see my [related blog post](http://www.hirahim.com/blog/2012/10/28/saving-pandora-songs-to-rdio/).
+
 ## Installation
 1. Sign up for a free [Rdio API key](http://developer.rdio.com).
 2. Edit `background.js` and set the value for `consumer_key` to your Rdio API key and `consumer_secret` to your Rdio shared secret.
