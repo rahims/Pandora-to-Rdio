@@ -9,7 +9,8 @@
   "content_scripts": [
 	  {
 		  "matches": ["http://www.pandora.com/*"],
-		  "js": ["jquery.min.js", "content_script.js"]
+		  "js": ["jquery.min.js", "content_script.js"],
+                  "css": ["transition.css"]
 	  }
   ],
 	"background": {
